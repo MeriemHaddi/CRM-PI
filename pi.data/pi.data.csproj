@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F82A5CF-4A1C-483C-AD73-7CE8C9021B51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pi.data</RootNamespace>
+    <AssemblyName>pi.data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="Infrastructure\DatabaseFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDatabaseFactory .cs" />
+    <Compile Include="Infrastructure\IRepositoryBase.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201911051448124_comment2.cs" />
+    <Compile Include="Migrations\201911051448124_comment2.Designer.cs">
+      <DependentUpon>201911051448124_comment2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911051503438_comment3.cs" />
+    <Compile Include="Migrations\201911051503438_comment3.Designer.cs">
+      <DependentUpon>201911051503438_comment3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911051506380_comment4.cs" />
+    <Compile Include="Migrations\201911051506380_comment4.Designer.cs">
+      <DependentUpon>201911051506380_comment4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911051510243_post1.cs" />
+    <Compile Include="Migrations\201911051510243_post1.Designer.cs">
+      <DependentUpon>201911051510243_post1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911051943190_posts.cs" />
+    <Compile Include="Migrations\201911051943190_posts.Designer.cs">
+      <DependentUpon>201911051943190_posts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911052010279_posts2.cs" />
+    <Compile Include="Migrations\201911052010279_posts2.Designer.cs">
+      <DependentUpon>201911052010279_posts2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070949270_conversation.cs" />
+    <Compile Include="Migrations\201911070949270_conversation.Designer.cs">
+      <DependentUpon>201911070949270_conversation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070953397_conversation2.cs" />
+    <Compile Include="Migrations\201911070953397_conversation2.Designer.cs">
+      <DependentUpon>201911070953397_conversation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070955161_conversation3.cs" />
+    <Compile Include="Migrations\201911070955161_conversation3.Designer.cs">
+      <DependentUpon>201911070955161_conversation3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911071959103_conversation123.cs" />
+    <Compile Include="Migrations\201911071959103_conversation123.Designer.cs">
+      <DependentUpon>201911071959103_conversation123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072011237_conversation1234.cs" />
+    <Compile Include="Migrations\201911072011237_conversation1234.Designer.cs">
+      <DependentUpon>201911072011237_conversation1234.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072013284_conversation12345.cs" />
+    <Compile Include="Migrations\201911072013284_conversation12345.Designer.cs">
+      <DependentUpon>201911072013284_conversation12345.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072021260_conversation123456.cs" />
+    <Compile Include="Migrations\201911072021260_conversation123456.Designer.cs">
+      <DependentUpon>201911072021260_conversation123456.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072027248_conversation1234567.cs" />
+    <Compile Include="Migrations\201911072027248_conversation1234567.Designer.cs">
+      <DependentUpon>201911072027248_conversation1234567.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072030423_conversation12345678.cs" />
+    <Compile Include="Migrations\201911072030423_conversation12345678.Designer.cs">
+      <DependentUpon>201911072030423_conversation12345678.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911072035004_marion123456.cs" />
+    <Compile Include="Migrations\201911072035004_marion123456.Designer.cs">
+      <DependentUpon>201911072035004_marion123456.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911092041299_rating.cs" />
+    <Compile Include="Migrations\201911092041299_rating.Designer.cs">
+      <DependentUpon>201911092041299_rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911101223333_postImage.cs" />
+    <Compile Include="Migrations\201911101223333_postImage.Designer.cs">
+      <DependentUpon>201911101223333_postImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911102008191_vue.cs" />
+    <Compile Include="Migrations\201911102008191_vue.Designer.cs">
+      <DependentUpon>201911102008191_vue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911111013585_datetimepost.cs" />
+    <Compile Include="Migrations\201911111013585_datetimepost.Designer.cs">
+      <DependentUpon>201911111013585_datetimepost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911111047136_datetimepost2.cs" />
+    <Compile Include="Migrations\201911111047136_datetimepost2.Designer.cs">
+      <DependentUpon>201911111047136_datetimepost2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MyConfiguration\CommentConfig.cs" />
+    <Compile Include="MyConfiguration\PostConfig.cs" />
+    <Compile Include="MyConfiguration\ReactionConfig.cs" />
+    <Compile Include="MyConfiguration\ResourcesConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pi.domaine\pi.domaine.csproj">
+      <Project>{e2b5132e-102d-4aa4-b9cc-29e165f37e6a}</Project>
+      <Name>pi.domaine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Infrastructure\desktop.ini" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyConvention\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911051448124_comment2.resx">
+      <DependentUpon>201911051448124_comment2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051503438_comment3.resx">
+      <DependentUpon>201911051503438_comment3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051506380_comment4.resx">
+      <DependentUpon>201911051506380_comment4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051510243_post1.resx">
+      <DependentUpon>201911051510243_post1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051943190_posts.resx">
+      <DependentUpon>201911051943190_posts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911052010279_posts2.resx">
+      <DependentUpon>201911052010279_posts2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070949270_conversation.resx">
+      <DependentUpon>201911070949270_conversation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070953397_conversation2.resx">
+      <DependentUpon>201911070953397_conversation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070955161_conversation3.resx">
+      <DependentUpon>201911070955161_conversation3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911071959103_conversation123.resx">
+      <DependentUpon>201911071959103_conversation123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072011237_conversation1234.resx">
+      <DependentUpon>201911072011237_conversation1234.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072013284_conversation12345.resx">
+      <DependentUpon>201911072013284_conversation12345.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072021260_conversation123456.resx">
+      <DependentUpon>201911072021260_conversation123456.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072027248_conversation1234567.resx">
+      <DependentUpon>201911072027248_conversation1234567.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072030423_conversation12345678.resx">
+      <DependentUpon>201911072030423_conversation12345678.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911072035004_marion123456.resx">
+      <DependentUpon>201911072035004_marion123456.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911092041299_rating.resx">
+      <DependentUpon>201911092041299_rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911101223333_postImage.resx">
+      <DependentUpon>201911101223333_postImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911102008191_vue.resx">
+      <DependentUpon>201911102008191_vue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911111013585_datetimepost.resx">
+      <DependentUpon>201911111013585_datetimepost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911111047136_datetimepost2.resx">
+      <DependentUpon>201911111047136_datetimepost2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.0.js" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
